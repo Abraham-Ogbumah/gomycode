@@ -1,0 +1,15 @@
+BEGIN
+READ number to check as n
+SET s = 0
+SET t = n
+WHILE n != 0 DO
+	r = n % 10
+	s = s * 10 + r
+	n = n / 10
+ENDWHILE
+IF n == t
+	DISPLAY n is palindrome
+ELSE
+	DISPLAY n is not a palindrome
+ENDIF
+END
